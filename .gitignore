@@ -1,22 +1,88 @@
-# Frontend dependencies and output
-frontend/node_modules/
-frontend/dist/
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# Diagnostic reports
+report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Instrumented libraries and coverage
+lib-cov
+coverage
+*.lcov
+.nyc_output
+TestResults/
+
+# Build and dependency directories
+bower_components
+build/Release
+node_modules/
+jspm_packages/
+web_modules/
+dist
+.next
+out
+.nuxt
+.output
+.vuepress/dist
+.temp
+.svelte-kit/
+**/.vitepress/dist
+**/.vitepress/cache
+.docusaurus
+.serverless/
+.fusebox/
+.dynamodb/
+.firebase/
+.cache
+.parcel-cache
+
+# TypeScript and package-manager caches
+*.tsbuildinfo
+.npm
+.eslintcache
+.stylelintcache
+.node_repl_history
+*.tgz
+.yarn-integrity
+.pnpm-store
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+
+# Vite
+vite.config.js.timestamp-*
+vite.config.ts.timestamp-*
+.vite/
 frontend/.vite/
 
-# .NET output
-**/bin/
-**/obj/
-*.user
-*.suo
-*.userosscache
-
-# Environment and secret files (keep examples)
+# Environment and local secrets (keep examples)
 .env
 .env.*
 !.env.example
 **/.env
 **/.env.*
 !**/.env.example
+
+# .NET output and local settings
+**/bin/
+**/obj/
+*.user
+*.suo
+*.userosscache
 appsettings.Local.json
 appsettings.*.Local.json
 
@@ -26,8 +92,3 @@ appsettings.*.Local.json
 .idea/
 .DS_Store
 Thumbs.db
-
-# Logs and coverage
-*.log
-coverage/
-TestResults/
